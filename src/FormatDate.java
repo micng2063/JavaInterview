@@ -6,10 +6,18 @@ import java.util.Date;
 
 public class FormatDate {
     public static void main(String[] args){
+        String pattern = "MM-dd";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+        String date = simpleDateFormat.format(new Date());
+        System.out.println(date);
+
+        /*
         String pattern = "MM-dd-yyyy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 
         String date = simpleDateFormat.format(new Date());
         System.out.println(date);
+         */
     }
 }

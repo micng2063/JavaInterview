@@ -8,6 +8,15 @@
 
 public class RemoveLeadingSpace {
     public static void main(String[] args){
+        String str = "              Something here, night";
+
+        System.out.println(str);
+
+        str = str.strip();
+
+        System.out.println(str);
+
+        /*
         String str = "        Something on the ground ";
 
         System.out.println(str);
@@ -15,5 +24,6 @@ public class RemoveLeadingSpace {
         str = str.strip();
 
         System.out.println(str);
+         */
     }
 }

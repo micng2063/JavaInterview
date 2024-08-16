@@ -4,6 +4,20 @@ import java.util.ArrayList;
 
 public class ForEach {
     public static void main(String[] args){
+        List<String> fruit = new ArrayList<>();
+        fruit.add("A");
+        fruit.add("B");
+        fruit.add("C");
+
+        Iterator<String> itFruit = fruit.iterator();
+
+        while (itFruit.hasNext()){
+            System.out.println(itFruit.next());
+        }
+
+        fruit.forEach(System.out::println);
+
+        /*
         List<String> list = new ArrayList<>();
 
         list.add("Apple");
@@ -17,5 +31,6 @@ public class ForEach {
         }
 
         list.forEach(System.out::println);
+         */
     }
 }

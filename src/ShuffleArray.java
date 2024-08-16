@@ -8,6 +8,20 @@ import java.util.Arrays;
 
 public class ShuffleArray {
     public static void main(String[] args){
+        int[] array = {1,2,3,4};
+
+        Random randomizer = new Random();
+
+        for (int i = 0; i < array.length; i++){
+            int randomIndex = randomizer.nextInt(array.length);
+            int tempValue = array[randomIndex];
+            array[randomIndex] = array[i];
+            array[i] = tempValue;
+        }
+
+        System.out.println(Arrays.toString(array));
+
+        /*
         int[] array = {1, 2, 3, 4, 5, 6};
 
         Random random = new Random();
@@ -19,5 +33,6 @@ public class ShuffleArray {
         }
 
         System.out.println(Arrays.toString(array));
+         */
     }
 }

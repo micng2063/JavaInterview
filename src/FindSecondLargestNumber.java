@@ -6,11 +6,28 @@
 
 public class FindSecondLargestNumber {
     public static void main(String[] args){
-        int[] array = {1, 2, 3, 4, 5, 19, 100};
+        int[] array = {1, 2, 3, 4, 5, 19, 24, 39, 100};
 
         System.out.println(find2ndHighest(array));
     }
 
+    public static int find2ndHighest(int[] array){
+        int highest = Integer.MIN_VALUE;
+        int secondHighest = Integer.MIN_VALUE;
+
+        for (int i: array){
+            if (i > highest){
+                secondHighest = highest;
+                highest = i;
+            }
+            else if (i > secondHighest){
+                secondHighest = i;
+            }
+        }
+
+        return secondHighest;
+    }
+    /*
     public static int find2ndHighest(int[] array){
         int highest = Integer.MIN_VALUE;
         int secondHighest= Integer.MIN_VALUE;
@@ -26,4 +43,6 @@ public class FindSecondLargestNumber {
         }
         return secondHighest;
     }
+     */
+
 }

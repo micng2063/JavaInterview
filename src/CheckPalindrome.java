@@ -7,8 +7,8 @@ public class CheckPalindrome {
     public static void main(String[] args){
         String str = "12321";
 
-        String str1 = "socks";
-        String str2 = "bob";
+        String str1 = "bob";
+        String str2 = "bobsa";
 
         //System.out.println(isPalindrome(str));
 
@@ -16,6 +16,23 @@ public class CheckPalindrome {
         System.out.println(checkPalindrome(str2));
     }
 
+    public static boolean checkPalindrome(String input){
+        StringBuilder output = new StringBuilder();
+
+        char[] charsArray = input.toCharArray();
+
+        for (int i = charsArray.length - 1 ; i >= 0 ; i--){
+            output.append(charsArray[i]);
+        }
+
+        if (!input.equals(output.toString())){
+            return false;
+        }
+
+        return true;
+    }
+
+    /*
     public static boolean checkPalindrome(String input){
         boolean result = true;
         int length = input.length();
@@ -44,4 +61,5 @@ public class CheckPalindrome {
 
         return false;
     }
+     */
 }

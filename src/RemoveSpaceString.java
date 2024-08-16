@@ -11,6 +11,21 @@ public class RemoveSpaceString {
     public static String removeWhiteSpace(String input){
         StringBuilder output = new StringBuilder();
 
+        char[] charOutput = input.toCharArray();
+
+        for (char c: charOutput){
+            if (!Character.isWhitespace(c)){
+                output.append(c);
+            }
+        }
+
+        return output.toString();
+    }
+
+    /*
+    public static String removeWhiteSpace(String input){
+        StringBuilder output = new StringBuilder();
+
         char[] charArray = input.toCharArray();
 
         for (char c: charArray){
@@ -21,4 +36,5 @@ public class RemoveSpaceString {
 
         return output.toString();
     }
+     */
 }

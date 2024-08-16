@@ -25,23 +25,47 @@ public class SortHashMap {
         scores = sortByValue(scores);
         System.out.println(scores);
     }
+    // To sort a HashMap, convert it to a list of entries, sort the list by values or keys,
+    // and then insert the sorted entries into a LinkedHashMap to maintain the sorted order.
 
+    public static Map<String,Integer> sortByValue(Map<String,Integer> map){
+        Map<String,Integer> sortedMap = new LinkedHashMap<>();
+
+        Set<Entry<String,Integer>> entrySet = map.entrySet();
+        List<Entry<String,Integer>> entryList = new ArrayList<>(entrySet);
+        entryList.sort((x,y) -> (x.getValue().compareTo(y.getValue())));
+
+        for (Entry<String,Integer> e: entryList){
+            sortedMap.put(e.getKey(), e.getValue());
+        }
+
+        return sortedMap;
+    }
+
+    /*
     public static Map<String, Integer> sortByValue(Map<String, Integer> scores){
+        // Create a LinkedHashMap to store the sorted entries, preserving the insertion order
         Map<String, Integer> sortedByValue = new LinkedHashMap<>();
 
+        // Get the entry set (key-value pairs) from the original map
         Set<Entry<String, Integer>> entrySet = scores.entrySet();
         System.out.println(entrySet + "\t Get entry set");
 
-        List<Entry<String,Integer>> entryList = new ArrayList<>(entrySet);
+        // Convert the entry set to a list to facilitate sorting
+        List<Entry<String, Integer>> entryList = new ArrayList<>(entrySet);
         System.out.println(entryList + "\t Create list since set is unordered: ");
 
-        entryList.sort((x,y) -> x.getValue().compareTo(y.getValue()));
+        // Sort the list based on the values of the entries in ascending order
+        entryList.sort((x, y) -> x.getValue().compareTo(y.getValue()));
         System.out.println(entryList + "\t Sort list by value: ");
 
-        for(Entry<String,Integer> e: entryList){
+        // Populate the LinkedHashMap with entries from the sorted list
+        for (Entry<String, Integer> e : entryList) {
             sortedByValue.put(e.getKey(), e.getValue());
         }
 
         return sortedByValue;
     }
+     */
+
 }

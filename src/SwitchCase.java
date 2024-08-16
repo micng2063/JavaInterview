@@ -7,6 +7,25 @@ public class SwitchCase {
     public static void main(String[] args){
         int choice = 3;
 
+        int x = switch(choice){
+            case 1,2,3: yield choice;
+            default: yield -1;
+        };
+
+        System.out.println(x);
+
+        String day = "Th";
+        String today = switch(day){
+            case "M", "T", "W" -> day;
+            case "Th", "F" -> "Tomorrow";
+            default -> "Weekend";
+        };
+
+        System.out.println(today);
+
+        /*
+        int choice = 3;
+
         int x  = switch(choice){
             case 1, 2, 3:
                 yield choice;
@@ -31,5 +50,6 @@ public class SwitchCase {
         };
 
         System.out.println(result);
+         */
     }
 }

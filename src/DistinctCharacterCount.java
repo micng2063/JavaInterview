@@ -8,6 +8,25 @@ import java.util.HashMap;
 
 public class DistinctCharacterCount {
     public static void main(String[] args){
+
+        String input = "javathehut";
+
+        char[] chars = input.toCharArray();
+
+        Map<Character,Integer> output = new HashMap<>();
+
+        for (char c : chars){
+            if (output.containsKey(c)){
+                output.put(c, output.get(c) + 1);
+            }
+            else {
+                output.put(c, 1);
+            }
+        }
+
+        System.out.println(output);
+
+        /*
         String str1 = "Awhitefoxeatacookie";
 
         char[] chars = str1.toCharArray();
@@ -24,5 +43,6 @@ public class DistinctCharacterCount {
         }
 
         System.out.println(charsCount);
+         */
     }
 }

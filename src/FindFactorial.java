@@ -9,6 +9,16 @@ public class FindFactorial {
         System.out.println(integer);
     }
 
+    public static long factorial(long input){
+        if(input == 1){
+            return 1;
+        }
+        else{
+            return input * factorial(input - 1);
+        }
+    }
+
+    /*
     public static long factorial(long n){
         if (n == 1){
             return 1;
@@ -16,4 +26,5 @@ public class FindFactorial {
         else
             return (n * factorial(n -1));
     }
+     */
 }

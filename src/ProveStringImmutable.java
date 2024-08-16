@@ -7,6 +7,21 @@ public class ProveStringImmutable {
         String str1 = "Hello";
         String str2 = str1;
 
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str1.equals(str2));
+
+        str1 = "Goodbye";
+
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str1.equals(str2));
+
+
+        /*
+        String str1 = "Hello";
+        String str2 = str1;
+
         System.out.println(str1.equals(str2));
 
         str1 = "Goodbye";
@@ -14,6 +29,7 @@ public class ProveStringImmutable {
         System.out.println(str1.equals(str2));
         System.out.println(str1);
         System.out.println(str2);
+         */
 
     }
 }

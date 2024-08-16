@@ -19,6 +19,24 @@ public class CheckArrayElement {
     }
 
     public static boolean sameElements(Object[] array1, Object[] array2){
+        Set<Object> unique1 = new HashSet<>(Arrays.asList(array1));
+        Set<Object> unique2 = new HashSet<>(Arrays.asList(array2));
+
+        if (unique1.size() != unique2.size()){
+            return false;
+        }
+
+        for (Object obj : unique1){
+            if (!unique2.contains(obj)){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    /*
+    public static boolean sameElements(Object[] array1, Object[] array2){
         Set<Object> uniqueElement1 = new HashSet<>(Arrays.asList(array1));
         Set<Object> uniqueElement2 = new HashSet<>(Arrays.asList(array2));
 
@@ -33,4 +51,5 @@ public class CheckArrayElement {
         }
         return true;
     }
+    */
 }

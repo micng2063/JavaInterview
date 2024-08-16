@@ -15,6 +15,16 @@ public class CheckOddList {
     }
 
     public static boolean onlyOddNumber(List<Integer> list){
+        for (Integer i : list){
+            if (i % 2 == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /*
+    public static boolean onlyOddNumber(List<Integer> list){
         for (int i : list){
             if (i % 2 == 0 ){
                 return false;
@@ -23,4 +33,5 @@ public class CheckOddList {
 
         return true;
     }
+    */
 }

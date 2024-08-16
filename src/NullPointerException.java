@@ -6,9 +6,17 @@ public class NullPointerException {
         printString(null, 3);
     }
 
+    public static void printString(String input, int count){
+        for (int i = 0; i < count; i++){
+            System.out.println(input.toUpperCase());
+        }
+    }
+
+    /*
     public static void printString(String s, int count){
         for (int i = 0; i < count; i++){
             System.out.println(s.toUpperCase());
         }
     }
+     */
 }

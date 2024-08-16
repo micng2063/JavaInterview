@@ -9,6 +9,18 @@ import java.util.LinkedList;
 public class ReverseLinkedList {
     public static void main(String[] args){
         LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+
+        LinkedList<Integer> reversedList = new LinkedList<>();
+
+        linkedList.descendingIterator().forEachRemaining(reversedList::add);
+
+        System.out.println(reversedList);
+
+        /*
+        LinkedList<Integer> linkedList = new LinkedList<>();
 
         linkedList.add(1);
         linkedList.add(2);
@@ -21,5 +33,6 @@ public class ReverseLinkedList {
         linkedList.descendingIterator().forEachRemaining(linkedList1::add);
 
         System.out.println(linkedList1);
+         */
     }
 }
