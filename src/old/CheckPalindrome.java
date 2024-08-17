@@ -12,11 +12,11 @@ public class CheckPalindrome {
 
         //System.out.println(isPalindrome(str));
 
-        System.out.println(checkPalindrome(str1));
-        System.out.println(checkPalindrome(str2));
+        System.out.println(isPalindrome(str1));
+        System.out.println(isPalindrome(str2));
     }
 
-    public static boolean checkPalindrome(String input){
+    public static boolean isPalindrome(String input){
         StringBuilder output = new StringBuilder();
 
         char[] charsArray = input.toCharArray();
