@@ -11,15 +11,5 @@ public class TryCatchExample {
             System.out.println(e);
             e.printStackTrace();
         }
-
-        /*
-        try {
-            FileInputStream fis = new FileInputStream("src/test.txt");
-            System.out.println("Found file.");
-        }
-        catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
-         */
     }
 }

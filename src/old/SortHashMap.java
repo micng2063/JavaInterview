@@ -25,6 +25,7 @@ public class SortHashMap {
         scores = sortByValue(scores);
         System.out.println(scores);
     }
+
     // To sort a HashMap, convert it to a list of entries, sort the list by values or keys,
     // and then insert the sorted entries into a LinkedHashMap to maintain the sorted order.
 
@@ -41,31 +42,5 @@ public class SortHashMap {
 
         return sortedMap;
     }
-
-    /*
-    public static Map<String, Integer> sortByValue(Map<String, Integer> scores){
-        // Create a LinkedHashMap to store the sorted entries, preserving the insertion order
-        Map<String, Integer> sortedByValue = new LinkedHashMap<>();
-
-        // Get the entry set (key-value pairs) from the original map
-        Set<Entry<String, Integer>> entrySet = scores.entrySet();
-        System.out.println(entrySet + "\t Get entry set");
-
-        // Convert the entry set to a list to facilitate sorting
-        List<Entry<String, Integer>> entryList = new ArrayList<>(entrySet);
-        System.out.println(entryList + "\t Create list since set is unordered: ");
-
-        // Sort the list based on the values of the entries in ascending order
-        entryList.sort((x, y) -> x.getValue().compareTo(y.getValue()));
-        System.out.println(entryList + "\t Sort list by value: ");
-
-        // Populate the LinkedHashMap with entries from the sorted list
-        for (Entry<String, Integer> e : entryList) {
-            sortedByValue.put(e.getKey(), e.getValue());
-        }
-
-        return sortedByValue;
-    }
-     */
 
 }

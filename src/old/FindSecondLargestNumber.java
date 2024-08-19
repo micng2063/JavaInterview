@@ -27,22 +27,5 @@ public class FindSecondLargestNumber {
 
         return secondHighest;
     }
-    /*
-    public static int find2ndHighest(int[] array){
-        int highest = Integer.MIN_VALUE;
-        int secondHighest= Integer.MIN_VALUE;
-
-        for (int i : array){
-            if (i > highest){
-                secondHighest = highest;
-                highest = i;
-            }
-            else if ( i > secondHighest){
-                secondHighest = 1;
-            }
-        }
-        return secondHighest;
-    }
-     */
 
 }

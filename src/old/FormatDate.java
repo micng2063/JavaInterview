@@ -11,13 +11,5 @@ public class FormatDate {
 
         String date = simpleDateFormat.format(new Date());
         System.out.println(date);
-
-        /*
-        String pattern = "MM-dd-yyyy";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-
-        String date = simpleDateFormat.format(new Date());
-        System.out.println(date);
-         */
     }
 }

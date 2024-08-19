@@ -19,16 +19,5 @@ public class MergeList {
 
         System.out.println(mergeList);
 
-        /*
-        ArrayList<String> list1 = new ArrayList<>();
-        list1.add("Hi");
-        list1.add("Hello");
-        ArrayList<String> list2 = new ArrayList<>();
-        list2.add("Goodbye");
-
-        ArrayList<String> listMerged = new ArrayList<>(list1);
-        listMerged.addAll(list2);
-        System.out.println(listMerged);
-         */
     }
 }

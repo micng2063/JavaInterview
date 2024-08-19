@@ -17,14 +17,4 @@ public class FindFactorial {
             return input * factorial(input - 1);
         }
     }
-
-    /*
-    public static long factorial(long n){
-        if (n == 1){
-            return 1;
-        }
-        else
-            return (n * factorial(n -1));
-    }
-     */
 }

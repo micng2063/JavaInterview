@@ -1,8 +1,8 @@
 /*
 Write a Java program to check if a given string is a palindrome or not.
-
 To check if a string is a palindrome in Java, you can compare characters from both ends of the string.
  */
+
 public class IsPalindrome {
     public static void main(String[] args){
         String input1 = "Bob";

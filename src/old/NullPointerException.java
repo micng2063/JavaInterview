@@ -12,11 +12,4 @@ public class NullPointerException {
         }
     }
 
-    /*
-    public static void printString(String s, int count){
-        for (int i = 0; i < count; i++){
-            System.out.println(s.toUpperCase());
-        }
-    }
-     */
 }

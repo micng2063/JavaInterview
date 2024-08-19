@@ -9,10 +9,4 @@ public class CheckVowelPresent {
     public static boolean containVowel(String input){
         return input.toLowerCase().matches(".*[aeiou].*");
     }
-
-    /*
-    public static boolean containVowel(String input){
-        return input.toLowerCase().matches(".*[aeiou].*");
-    }
-     */
 }

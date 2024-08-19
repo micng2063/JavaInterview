@@ -8,13 +8,6 @@ public class FibonacciRecursion {
     public static void main(String[] args){
         // printFibonacci(10);
 
-        /*
-        int sequenceLength = 10;
-        for (int i = 0; i < sequenceLength; i++){
-            System.out.print(fibonacciRecursion(i) + " ");
-        }
-         */
-
         int sequenceLength = 4;
         for (int i = 0; i < sequenceLength; i++){
             System.out.print(fibonacciRecursion(i) + " ");
@@ -30,7 +23,6 @@ public class FibonacciRecursion {
     }
 
     /*
-
     public static void printFibonacci(int count){
         int a = 0;
         int b = 1;
@@ -42,13 +34,6 @@ public class FibonacciRecursion {
             b = c;
             c = a + b;
         }
-    }
-
-    public static int fibonacciRecursion(int count){
-        if (count <= 1){
-            return count;
-        }
-        return fibonacciRecursion(count -1) + fibonacciRecursion(count - 2);
     }
      */
 }

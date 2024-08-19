@@ -1,8 +1,9 @@
-// Write Java program that checks if two arrays contain the same elements.
-
-// To check if two arrays contain the same elements, you need to first create a set of elements from both the
-// arrays, and then compare the elements in these sets to find if there is an element that is not present in
-// both sets.
+/*
+Write Java program that checks if two arrays contain the same elements.
+To check if two arrays contain the same elements, you need to first create a set of elements from both the
+arrays, and then compare the elements in these sets to find if there is an element that is not present in
+both sets.
+ */
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -35,21 +36,4 @@ public class CheckArrayElement {
         return true;
     }
 
-    /*
-    public static boolean sameElements(Object[] array1, Object[] array2){
-        Set<Object> uniqueElement1 = new HashSet<>(Arrays.asList(array1));
-        Set<Object> uniqueElement2 = new HashSet<>(Arrays.asList(array2));
-
-        if (uniqueElement1.size() != uniqueElement2.size()){
-            return false;
-        }
-
-        for (Object obj : uniqueElement1){
-            if (!uniqueElement2.contains(obj)) {
-                return false;
-            }
-        }
-        return true;
-    }
-    */
 }

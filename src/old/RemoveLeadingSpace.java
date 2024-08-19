@@ -16,14 +16,5 @@ public class RemoveLeadingSpace {
 
         System.out.println(str);
 
-        /*
-        String str = "        Something on the ground ";
-
-        System.out.println(str);
-
-        str = str.strip();
-
-        System.out.println(str);
-         */
     }
 }

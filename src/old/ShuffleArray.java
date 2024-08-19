@@ -21,18 +21,5 @@ public class ShuffleArray {
 
         System.out.println(Arrays.toString(array));
 
-        /*
-        int[] array = {1, 2, 3, 4, 5, 6};
-
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++){
-            int randomIndex = random.nextInt(array.length);
-            int tempValue = array[randomIndex];
-            array[randomIndex] = array[i];
-            array[i] = tempValue;
-        }
-
-        System.out.println(Arrays.toString(array));
-         */
     }
 }

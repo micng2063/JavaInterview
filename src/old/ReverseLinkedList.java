@@ -19,20 +19,5 @@ public class ReverseLinkedList {
 
         System.out.println(reversedList);
 
-        /*
-        LinkedList<Integer> linkedList = new LinkedList<>();
-
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
-
-        System.out.println(linkedList);
-
-        LinkedList<Integer> linkedList1 = new LinkedList<>();
-
-        linkedList.descendingIterator().forEachRemaining(linkedList1::add);
-
-        System.out.println(linkedList1);
-         */
     }
 }

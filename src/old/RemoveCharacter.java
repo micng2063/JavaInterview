@@ -5,12 +5,5 @@ public class RemoveCharacter {
         str1 = str1.replace("a", "A");
         System.out.println(str1);
 
-        /*
-        String str1 = "aBCEeeefagh";
-
-        str1 = str1.replace("a", "A");
-
-        System.out.println(str1);
-         */
     }
 }

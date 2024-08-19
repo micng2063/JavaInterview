@@ -22,19 +22,4 @@ public class RemoveSpaceString {
         return output.toString();
     }
 
-    /*
-    public static String removeWhiteSpace(String input){
-        StringBuilder output = new StringBuilder();
-
-        char[] charArray = input.toCharArray();
-
-        for (char c: charArray){
-            if (!Character.isWhitespace(c)){
-                output.append(c);
-            }
-        }
-
-        return output.toString();
-    }
-     */
 }

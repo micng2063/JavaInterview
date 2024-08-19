@@ -1,6 +1,5 @@
 // How do you check if a list of integers contains only odd numbers in Java?
 
-// You can use a for loop and check whether each element is odd:
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,16 +21,4 @@ public class CheckOddList {
         }
         return true;
     }
-
-    /*
-    public static boolean onlyOddNumber(List<Integer> list){
-        for (int i : list){
-            if (i % 2 == 0 ){
-                return false;
-            }
-        }
-
-        return true;
-    }
-    */
 }

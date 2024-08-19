@@ -26,21 +26,4 @@ public class StringReverse {
         return output.toString();
     }
 
-    /*
-    public static String reverseString(String input){
-        if (input == null){
-            throw new IllegalArgumentException("Null is not a valid input");
-        }
-
-        StringBuilder output = new StringBuilder();
-
-        char[] chars = input.toCharArray();
-
-        for (int i = chars.length - 1; i >= 0; i--){
-            output.append(chars[i]);
-        }
-
-        return output.toString();
-    }
-     */
 }

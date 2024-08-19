@@ -1,8 +1,9 @@
-//  Write a program that prints the numbers from 1 to 100.
-
-//  For multiples of three, print “Fizz” instead of the number
-//  For the multiples of five, print “Buzz”.
-//  For numbers that are multiples of both three and five, print “FizzBuzz”.
+/*
+Write a program that prints the numbers from 1 to 100.
+For multiples of three, print “Fizz” instead of the number
+For the multiples of five, print “Buzz”.
+For numbers that are multiples of both three and five, print “FizzBuzz”.
+ */
 
 public class FizzBuzz {
     public static void main(String[] args){

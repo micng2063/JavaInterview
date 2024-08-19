@@ -45,21 +45,5 @@ public class CheckPalindrome {
         }
         return result;
     }
-
-    public static boolean isPalindrome(String input){
-        StringBuilder output = new StringBuilder();
-
-        char[] chars = input.toCharArray();
-
-        for (int i = chars.length - 1; i >= 0; i--){
-            output.append(chars[i]);
-        }
-
-        if (input.equals(output.toString())){
-            return true;
-        }
-
-        return false;
-    }
      */
 }
